@@ -26,8 +26,6 @@ https://developer.wordpress.org/themes/getting-started/quick-start-guide/
 
 ## Header Fields
 
-/\*\*
-
 - Theme Name: Fabled Sunset
 - Theme URI: https://example.com/fabled-sunset
 - Description: Custom theme description...
@@ -42,16 +40,12 @@ https://developer.wordpress.org/themes/getting-started/quick-start-guide/
 - Requires PHP: 7.4
 - License: GNU General Public License v2.0 or later
 - License URI: https://www.gnu.org/licenses/gpl-2.0.html
-  \*/
 
 ##Child theme header fields
-
-/\*\*
 
 - Theme Name: Grand Sunrise
 - Template: fabled-sunset
 - ...other header fields
-  \*/
 
 ##Template files
 
