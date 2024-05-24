@@ -3,10 +3,46 @@
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {},
-    "styles": {},
+    "styles": {
+      "color": {
+        "text": "#000000",
+        "background": "#ffffff"
+      },
+      "elements": {
+        "button": {
+          "color": {
+            "text": "#ffffff",
+            "background": "#000000"
+          }
+        }
+      },
+      "blocks": {
+        "core/code": {
+          "color": {
+            "text": "#ffffff",
+            "background": "#000000"
+          }
+        }
+      }
+    },
     "customTemplates": {},
-    "templateParts": {},
-    "patterns": []
+    "templateParts": [
+      {
+        "area": "header",
+        "name": "header",
+        "title": "Header"
+      },
+      {
+        "area": "footer",
+        "name": "footer",
+        "title": "Footer"
+      }
+    ],
+    "patterns": [
+      "fullscreen-cover-image-gallery",
+      "hero-banner-with-overlap-images",
+      "mixed-shape-gallery"
+    ]
   },
 
   {
@@ -14,16 +50,78 @@
     "settings": {
       "appearanceTools": false,
       "border": { "color": true, "radius": true, "style": true, "width": true },
-      "color": { "link": true },
-      "custom": {},
+
+      "color": {
+        "default": "global color pallete create here",
+        "palette": [
+          {
+            "background": true,
+            "custom": true,
+            "customDuotone": true,
+            "customGradient": true,
+            "defaultDuotone": true,
+            "defaultGradients": true,
+            "defaultPalette": true,
+            "duotone": [],
+            "gradients": [],
+            "link": true,
+            "palette": [],
+            "text": true,
+            "color": "#0284c7",
+
+            "name": "Base",
+            "slug": "base"
+          },
+          {
+            "color": "#ffffff",
+            "name": "Contrast",
+            "slug": "contrast"
+          }
+        ]
+      },
+      "custom": {
+        "customCss": "Custom css can be created for later use as variable",
+        "lineHeight": {
+          "xs": "1",
+          "sm": "1.25",
+          "md": "1.5",
+          "lg": "1.75"
+        }
+      },
       "dimensions": { "minHeight": true },
-      "layout": {},
+      "layout": {
+        "contentSize": "",
+        "wideSize": ""
+      },
       "position": { "sticky": true },
       "shadow": {},
       "spacing": { "blockGap": true, "margin": true, "padding": true },
       "typography": { "lineHeight": true },
       "useRootPaddingAwareAlignments": false,
-      "blocks": {}
+      "blocks": {
+        "overwritter": "block label color created here which overwrite the global color pallete",
+        "core/cover": {
+          "color": {
+            "palette": [
+              {
+                "color": "#ea580c",
+                "name": "Base",
+                "slug": "base"
+              },
+              {
+                "color": "#fff7ed",
+                "name": "Contrast",
+                "slug": "contrast"
+              },
+              {
+                "color": "#89CFF0",
+                "name": "Primary",
+                "slug": "primary"
+              }
+            ]
+          }
+        }
+      }
     }
   }
 ]
