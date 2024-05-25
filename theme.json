@@ -28,6 +28,11 @@
     "customTemplates": {},
     "templateParts": [
       {
+        "area": "loop",
+        "name": "loop-default",
+        "title": "Loop - Default"
+      },
+      {
         "area": "header",
         "name": "header",
         "title": "Header"
